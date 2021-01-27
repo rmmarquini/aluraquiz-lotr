@@ -1,0 +1,22 @@
+{
+    "bg": "https://i.pinimg.com/originals/00/8b/7f/008b7fc4a0649597d797bb05de224f37.jpg",
+    "url": "https://github.com/rmmarquini",
+    "title": "LOTR Master Quiz",
+    "description": "Try out your geek knowledge about LOTR",
+    "questions": [
+    ],
+    "external": [
+    ],
+    "theme": {
+      "colors": {
+        "primary": "#142F42",
+        "secondary": "#718C87D7",
+        "mainBg": "#E8F2F4D7",
+        "headerContrastText": "#E8F2F4",
+        "contrastText": "#070D2F",
+        "wrong": "#CF3230",
+        "success": "#014217"
+      },
+      "borderRadius": "4px"
+    }
+  }
