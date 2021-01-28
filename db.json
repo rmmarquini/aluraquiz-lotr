@@ -2,7 +2,9 @@
     "bg": "https://i.pinimg.com/originals/00/8b/7f/008b7fc4a0649597d797bb05de224f37.jpg",
     "url": "https://github.com/rmmarquini",
     "title": "LOTR Master Quiz",
-    "description": "Try out your geek knowledge about LOTR",
+    "subtitle": "That You Shall Not Pass!",
+    "description": "Despite being released well over a two decade ago, The Lord of the Rings movies remains just as prevalent in our culture. It looks like this Tolkien fantasy isn’t going anywhere anytime soon, which is good for those us who like to venture back into Middle-earth at least a few times every year.",
+    "explanationText": "So for this quiz, we’ll be focusing on some more of the obscure trivia and facts from the original trilogy.",
     "questions": [
     ],
     "external": [

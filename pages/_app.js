@@ -1,8 +1,8 @@
-import React from 'react'
-import Head from 'next/head'
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import React from 'react';
+import Head from 'next/head';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
-import db from '../db.json'
+import db from '../db.json';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
     /* New styles */
     display: flex;
     flex-direction: column;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     // Deixa branco no começo
     color: ${({ theme }) => theme.colors.contrastText};
   }
@@ -30,13 +30,14 @@ const GlobalStyle = createGlobalStyle`
 
 const { theme } = db;
 
+// eslint-disable-next-line react/prop-types
 export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
- 
+
         <meta name="description" content={db.description} />
         <title>{db.title}</title>
 
@@ -47,12 +48,17 @@ export default function App({ Component, pageProps }) {
         <meta property="og:title" content={db.title} key="ogtitle" />
         <meta property="og:description" content={db.description} key="ogdesc" />
 
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
+
       </Head>
 
       <ThemeProvider theme={theme}>
         <GlobalStyle />
+        {/* eslint-disable-next-line react/jsx-props-no-spreading */}
         <Component {...pageProps} />
       </ThemeProvider>
     </>
-  )
+  );
 }
